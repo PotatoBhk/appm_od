@@ -11,6 +11,8 @@ import org.junit.Test
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val list = listOf<Int>(1,2,3,4,5,6)
+        for(i in 0 until list.size)
+            println(i)
     }
 }

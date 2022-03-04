@@ -3,7 +3,7 @@
     <string name="description_image">Video Streaming</string>
     <string name="detections_block">Bloque de detecciones</string>
     <string name="main_scrollable">Main Scroll Layout</string>
-    <string name="init_state">NORMAL</string>
+    <string name="init_state">SIN CONEXIÓN</string>
     <string name="activity_title">ACTIVIDAD:</string>
     <string name="initial_date">Fecha detección:</string>
     <string name="nav_prev">Anterior</string>
