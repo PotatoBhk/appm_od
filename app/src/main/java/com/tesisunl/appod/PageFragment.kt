@@ -28,7 +28,6 @@ class PageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_page, container, false)
     }
 
@@ -37,7 +36,7 @@ class PageFragment : Fragment() {
         if(arguments != null) {
             val id = requireArguments().getInt("id")
             val streamContainer = view.findViewById<ImageView>(R.id.streamContainer)
-            streamContainer.setImageResource(R.mipmap.test_resource_a_foreground)
+            streamContainer.setImageResource(R.drawable.no_image_foreground)
 
             val mSocket = SocketHandler.getSocket()
             println("Fragment with id: $id")
@@ -46,7 +45,6 @@ class PageFragment : Fragment() {
                     val bytes = args[0] as ByteArray
                     val bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
                     activity?.runOnUiThread {
-                        println("In...")
                         streamContainer.setImageBitmap(Bitmap.createBitmap(bmp))
                     }
                 }
