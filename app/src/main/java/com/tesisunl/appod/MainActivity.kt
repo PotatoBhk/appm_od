@@ -59,10 +59,14 @@ class MainActivity : AppCompatActivity() {
                     observer.setBackgroundColor(Color.parseColor("#1976D2"))
                 }
             }.on(Socket.EVENT_CONNECT_ERROR) {
-                Toast.makeText(this, "Error in websockets connection", Toast.LENGTH_LONG).show()
+                runOnUiThread {
+                    Toast.makeText(this, "Error in websockets connection", Toast.LENGTH_LONG).show()
+                }
             }.on(Socket.EVENT_DISCONNECT) {
-                Toast.makeText(this, "Connection with websockets has ended", Toast.LENGTH_LONG)
-                    .show()
+                runOnUiThread {
+                    Toast.makeText(this, "Connection with websockets has ended", Toast.LENGTH_LONG)
+                        .show()
+                }
             }
 
         val url = "http://192.168.1.9:5000/api/get_systems"
