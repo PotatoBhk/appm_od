@@ -7,3 +7,9 @@ data class System(
     val link: String,
     val model: Int
 )
+
+data class ResponseLogin (
+    val isValid : java.lang.Boolean,
+    val message : String,
+    val status: java.lang.Boolean
+)

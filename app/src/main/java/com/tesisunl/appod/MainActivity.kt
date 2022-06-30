@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val server : String? = intent.getStringExtra("server")
         detectorImageView = findViewById(R.id.streamingView)
         viewPager = findViewById(R.id.viewPager)
         menuBar = findViewById(R.id.bottomNavigation)
@@ -69,7 +70,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-        val url = "http://192.168.1.9:5000/api/get_systems"
+        val url = "http://$server/api/get_systems"
+        println("URL: $url")
         val queue = Volley.newRequestQueue(this)
         val stringRequest = StringRequest(
             Request.Method.GET, url,

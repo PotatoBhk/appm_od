@@ -1,9 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/welcome_login"
+        android:textColor="#1A202E"
+        android:textColorHint="#1A202E"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/description_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:text="@string/subtitle_login"
+        android:textColor="#262C39"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/serverLogintf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/server_login"
+        android:textColorHint="#8E9AAB"
+        app:boxBackgroundColor="#F1F5F9"
+        app:hintTextColor="#000000"
+        app:passwordToggleTint="#1A202E"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/serverLoginti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F5F9"
+            android:foregroundTint="#1A202E"
+            android:inputType="textPersonName"
+            android:textColor="#1A202E"
+            android:textColorHint="#546E7A" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mailLogintf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/mail_login"
+        android:textColorHint="#8E9AAB"
+        app:boxBackgroundColor="#F1F5F9"
+        app:boxStrokeColor="#1A202E"
+        app:hintTextColor="#000000"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mailLoginti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F5F9"
+            android:foregroundTint="#1A202E"
+            android:inputType="textEmailAddress"
+            android:textColor="#1A202E"
+            android:textColorHint="#546E7A" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userLogintf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/user_login"
+        android:textColorHint="#8E9AAB"
+        app:boxBackgroundColor="#F1F5F9"
+        app:hintTextColor="#000000"
+        app:passwordToggleTint="#1A202E"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userLoginti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F5F9"
+            android:foregroundTint="#1A202E"
+            android:inputType="textPersonName"
+            android:textColor="#1A202E"
+            android:textColorHint="#546E7A" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLogintf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/password_login"
+        android:textColorHint="#8E9AAB"
+        app:boxBackgroundColor="#F1F5F9"
+        app:boxStrokeColor="#1A202E"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="#000000"
+        app:passwordToggleTint="#1A202E"
+        app:placeholderTextColor="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordLoginti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2F5F9"
+            android:foregroundTint="#1A202E"
+            android:inputType="textPassword"
+            android:textColor="#1A202E"
+            android:textColorHint="#546E7A" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/getPassBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:minHeight="5dip"
+        android:text="@string/forgot_login"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="#1A202E"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#1A202E"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/login_login"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
