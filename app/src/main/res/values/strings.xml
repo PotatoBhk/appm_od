@@ -20,4 +20,7 @@
     <string name="login_login">Iniciar sesión</string>
     <string name="server_login">Servidor</string>
     <string name="mail_login">Correo Electrónico</string>
+    <string name="title_alarm">¡Intruso Detectado!</string>
+    <string name="description_icon_alarm">Icono para la vista de alarma</string>
+    <string name="button_alarm">CERRAR</string>
 </resources>

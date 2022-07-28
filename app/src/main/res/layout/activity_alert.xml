@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AlertActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:contentDescription="@string/description_icon_alarm"
+        app:srcCompat="@drawable/ic_baseline_warning_24" />
+
+    <TextView
+        android:id="@+id/title_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="@string/title_alarm"
+        android:textColor="#1A202E"
+        android:textColorHint="#1A202E"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btn_close"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/button_alarm"
+        android:textColor="#1A202E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:iconTint="#1A202E" />
+
+</LinearLayout>

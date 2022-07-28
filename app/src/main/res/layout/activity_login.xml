@@ -58,7 +58,8 @@
             android:foregroundTint="#1A202E"
             android:inputType="textPersonName"
             android:textColor="#1A202E"
-            android:textColorHint="#546E7A" />
+            android:textColorHint="#546E7A"
+            android:text="192.168.1.4:5000"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,7 +85,8 @@
             android:foregroundTint="#1A202E"
             android:inputType="textEmailAddress"
             android:textColor="#1A202E"
-            android:textColorHint="#546E7A" />
+            android:textColorHint="#546E7A"
+            android:text="mail@mail.com"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,7 +112,8 @@
             android:foregroundTint="#1A202E"
             android:inputType="textPersonName"
             android:textColor="#1A202E"
-            android:textColorHint="#546E7A" />
+            android:textColorHint="#546E7A"
+            android:text="admin"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,26 +141,27 @@
             android:foregroundTint="#1A202E"
             android:inputType="textPassword"
             android:textColor="#1A202E"
-            android:textColorHint="#546E7A" />
+            android:textColorHint="#546E7A"
+            android:text="admin"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/getPassBtn"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="20dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:minHeight="5dip"
-        android:text="@string/forgot_login"
-        android:textAlignment="textEnd"
-        android:textAllCaps="false"
-        android:textColor="#1A202E"
-        android:textSize="12sp"
-        android:textStyle="bold" />
+<!--    <Button-->
+<!--        android:id="@+id/getPassBtn"-->
+<!--        style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:fontFamily="@font/open_sans_bold"-->
+<!--        android:minHeight="5dip"-->
+<!--        android:text="@string/forgot_login"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#1A202E"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="bold" />-->
 
     <Button
         android:id="@+id/loginBtn"
